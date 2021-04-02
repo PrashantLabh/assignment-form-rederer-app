@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smart Form Renderer App</title>
+		<meta charset="UTF-8" />
+	</head>
+
+	<body>
+            <div id="app">
+                <section id="formGenerator" ></section>
+                <section id="generatedValues">
+                    <h5>Geneated Form Values</h5>
+                    <div id="valueContent"></div>
+                </section>
+            </div>
+        <script>
+            
+            window.JSON_FORM_CONFIG = JSON.parse('<%- JSON.stringify(form) %>');
+            window.formReferenceId = '<%- JSON.stringify(id) %>';
+        </script>
+		<script src="/script.js"></script>
+	</body>
+</html>
